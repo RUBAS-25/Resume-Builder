@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .center {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Resume Builder</h1>
+        </div>
+        <div class="links">
+            <h4><a href="./index.html">Home</a></h4>
+            <h4><a href="./create-resume.html">Create Resume</a></h4>
+            <h4><a href="./my-resume.html">Resume</a></h4>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="box1">
+            <img src="" alt="profile picture" id="profileImage" class="profile" />
+
+            <section id="objective">
+                <h3>Education</h3>
+                <ul id="education-list"></ul>
+            </section>
+
+            <section>
+                <h3>Contact Details</h3>
+                <p><b>Email:</b> <span id="email"></span></p>
+                <p><b>Phone:</b> <span id="phone"></span></p>
+                <p><b>Address:</b> <span id="address"></span></p>
+                <p><b>LinkedIn:</b> <span id="linkedIn"></span></p>
+                <p><b>Facebook:</b> <span id="facebook"></span></p>
+                <p><b>Instagram:</b> <span id="instagram"></span></p>
+            </section>
+
+            <section>
+                <h3>Skills</h3>
+                <ul id="skills-list"></ul>
+            </section>
+        </div>
+
+        <div class="box2">
+            <div class="details">
+                <h1 id="name"></h1>
+                <h2 id="job"></h2>
+
+                <h2 class="sum">Summary</h2>
+                <p id="summary" class="sum-info"></p>
+
+                <h2 class="sum">Work Experience</h2>
+                <ul id="work-experience-list" class="sum-info"></ul>
+
+                <h2 id="references" class="sum">References</h2>
+                <p id="references-content" class="sum-info"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./my-resume.js"></script>
+</body>
+
+</html>

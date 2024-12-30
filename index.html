@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Static Interactive Resume</title>
+    <style>
+        .logo h1 {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Resume Builder</h1>
+        </div>
+        <div class="links">
+            <h4><a href="./index.html">Home</a></h4>
+            <h4><a href="./create-resume.html">Create Resume</a></h4>
+            <h4><a href="./my-resume.html">Resume</a></h4>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="box1">
+            <img src="./profile.jpg" alt="profile picture" class="profile">
+
+            <section id="objective">
+                <h3>Education</h3>
+                <div class="info">
+                    <ul>
+                        <li>matriculation in science</li>
+                        <li>intermediate</li>
+                        <li>Artificial inteligence, <br>web 3.0 & metaverse</li>
+                        <li>web & app development</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>contact details</h3>
+                <p class="contact">
+                <p><b>email:</b> rubas.g23478@iqra.edu.pk</p>
+                <p><b>phone:</b> +92 12345678</p>
+                <p><b>address:</b> agrataj lyari karachi pakistan</p>
+                <p><b>linkedIn:</b> Rubash Rehman</p>
+                <p><b>facebook:</b> Rubash Rehman</p>
+                <p><b>insta:</b> mahnoor_lluv</p>
+                </p>
+            </section>
+
+            <section>
+                <h3>skills</h3>
+                <ul>
+                    <li>HTML coding</li>
+                    <li>CSS coding</li>
+                    <li>makeup artist</li>
+                    <li>mehndi artist</li>
+                    <li>bootstrap</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="box2">
+            <div class="details">
+                <div class="myinfo">
+                    <h1 id="name">Rubash Rehman</h1>
+                    <h2 id="job">web developer</h2>
+                </div>
+
+                <h2 class="sum">summary</h2>
+                <hr id="sum-hr">
+                <p id="summary" class="sum-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                    consectetur voluptates obcaecati soluta quod delectus dolorum sunt, labore ipsum eos rem ab,
+                    aliquam, laudantium illo quisquam sit Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    soluta quod delectus dolorum sunt, labore ipsum eos rem ab, aliquam, laudantium illo quisquam sit
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, illum. facere provident.</p>
+
+                <h2 class="sum">work experience</h2>
+                <hr id="sum-hr">
+                <p class="sum-info"><b>html & css developer</b></p>
+                <ul class="sum-info">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing . Corporis enim vitae consequuntur soluta
+                        nulla. Provident.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing . Soluta nostrum vero , eveniet excepturi
+                        deserunt.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing . Odit a corporis, quam explicabo nam?</li>
+                </ul>
+
+                <h2 id="references" class="sum">references</h2>
+                <hr id="sum-hr">
+                <p id="references2" class="sum-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
+                    ducimus!</p>
+
+                <button id="btn">Hide/Show references</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function () {
+            const references = document.getElementById('references2');
+            references.style.display = references.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
